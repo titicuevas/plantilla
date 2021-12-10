@@ -17,6 +17,19 @@
                     </g>
                 </svg>
 
+
+
+                <nav>
+                    @if (App\Http\Controllers\UserController::logueado())
+                        <form action="logout" method="post">
+                            @csrf
+                            <input type="submit"  value="logout" class="hover:text-red-500 hover:underline" />
+                        </form>
+                    @else
+                    <a class="hover:text-blue-500 hover:underline" href="/login">login</a>
+                    @endif
+                </nav>
+
             </header>
 
             @if (session()->has('error'))
