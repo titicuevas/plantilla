@@ -27,13 +27,13 @@ class CreateVuelosTable extends Migration
         });
     }
 
-/**
- * Reverse the migrations.
- *
- * @return void
- */
-public function down()
-{
-    Schema::dropIfExists('vuelos');
-}
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('vuelos');
+    }
 }

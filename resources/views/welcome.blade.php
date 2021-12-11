@@ -1,3 +1,3 @@
 <x-layout>
-Hola
+Bienvenido al aeropuerto
 </x-layout>
